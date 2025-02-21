@@ -88,9 +88,9 @@ function displayStats(data) {
         ${data.points !== undefined ? `<p>Punkte: ${data.points}</p>` : ''}
         ${data.gamesPlayed !== undefined ? `<p>Spiele gespielt: ${data.gamesPlayed}</p>` : ''}
         ${data.gamesWon !== undefined ? `<p>Gewonnene Spiele: ${data.gamesWon}</p>` : ''}
-        <p>Aktuelle Kill-Streak: ${data.currentKillStreak || 'Info nur wenn player on ist.'}</p>
+        <p>Aktuelle Kill-Streak: ${data.currentKillStreak || '0'}</p>
         <p>Höchste Kill-Streak: ${data.highestKillStreak || 'Keine Informationen'}</p>
-        <p>Kopfgeld: ${data.bounty || 'Info nur wenn player on ist.'}</p>
+        <p>Kopfgeld: ${data.bounty || '0'}</p>
         <p>XP: ${data.xp || 'Keine Informationen'}</p>
     `;
     document.getElementById('searchSection').style.display = 'none';
